@@ -1,0 +1,53 @@
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+.scroll_wrapper {
+  .One {
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+    &:nth-of-type(1) {
+      background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-of-type(2) {
+      background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/0x0/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-of-type(3) {
+      background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-of-type(4) {
+      background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ddc135ed-1638-40fb-8ab1-f8045059ecef/bvlatuR/std/4096x2560/Homepage-Model-X-Desktop-LHD");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-of-type(5) {
+      background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:nth-of-type(6) {
+      background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/60a584f9-7ae3-4cd5-9fa8-6251715df25b/bvlatuR/std/2880x1800/Solar-Roof-Design-Desktop-Global?quality=auto-medium&format=auto");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: #f8f8f8;
+    }
+    &:nth-of-type(7) {
+      background-color: #f8f8f8;
+    }
+  }
+}

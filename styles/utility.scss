@@ -1,0 +1,21 @@
+$brand_color: #0000;
+$second_brand: #ffffff;
+$third_brand: rgb(244, 239, 239);
+
+@mixin displayCenter($aline-items, $justify-content) {
+  display: flex;
+  align-items: $aline-items;
+  justify-content: $justify-content;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin mQ($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

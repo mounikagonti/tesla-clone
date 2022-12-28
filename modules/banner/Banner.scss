@@ -1,0 +1,53 @@
+.banner_wrapper {
+  @include displayCenter(center, center);
+  flex-direction: column;
+  .banner_top {
+    margin-top: 80px;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .model {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    a {
+      color: black;
+    }
+  }
+  .banner_bottom {
+    margin-top: 500px;
+    .btn {
+      display: inline-block;
+      padding: 10px 80px;
+      background-color: black;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      &:nth-of-type(2) {
+        background-color: #fff;
+        color: black;
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .banner_wrapper {
+    .banner_top {
+      margin-top: 100px;
+    }
+    .banner_bottom {
+      margin-top: 450px;
+      .btn {
+        width: 85%;
+        &:nth-of-type(2) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

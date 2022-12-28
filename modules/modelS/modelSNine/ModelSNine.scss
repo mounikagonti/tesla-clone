@@ -1,0 +1,81 @@
+.modelS_nine_wrapper {
+  height: 100vh;
+  @include displayCenter(flex-start, center);
+//   .modelS_nine_left {
+//     padding-top: 56.25%;
+//     height: 0px;
+//     position: relative;
+//     .video {
+//       width: 100%;
+//       height: 100%;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//     }
+//   }
+  .modelS_nine_right {
+    padding: 40px 30px;
+    .modelS_nine_text {
+      font-size: 17px;
+      font-weight: 400px;
+    }
+    .modelS_nine_heading {
+      .modelS_nine_heading_left {
+        font-size: 28px;
+        font-weight: 500px;
+      }
+      .modelS_nine_heading_right {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 400px;
+      }
+    }
+    .modelS_nine_btn_wrapper {
+      margin-top: 200px;
+      .buy_now_btn {
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
+        border: 3px solid black;
+        background: transparent;
+        padding: 8px 70px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        &:hover {
+          background-color: black;
+          color: #ffff;
+        }
+      }
+      .order_btn {
+        margin-top: 20px;
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
+        background-color: #eeeeee;
+        padding: 10px 50px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: none;
+        color: black;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .modelS_nine_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-top: -10px;
+    .modelS_nine_left {
+      //   width: 400px;
+    }
+  }
+}

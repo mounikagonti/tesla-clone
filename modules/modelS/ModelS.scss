@@ -1,0 +1,90 @@
+// html {
+//   scroll-snap-type: mandatory;
+//   scroll-snap-points-y: repeat(100vh);
+//   scroll-snap-type: y mandatory;
+// }
+
+.modelS_wrapper {
+  .modelS_One {
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8a74d206-66dc-4386-8c7a-88ff32174e7d/bvlatuR/std/4096x2560/Model-S-Main-Hero-Desktop-LHD");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: inset 54px -200px 45px -67px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 54px -200px 45px -67px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 54px -200px 45px -67px rgba(0, 0, 0, 0.75);
+  }
+  .modelS_Two {
+    -webkit-box-shadow: inset -18px 200px 49px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -18px 200px 49px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -18px 200px 49px -25px rgba(0, 0, 0, 0.75);
+    background-color: black;
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/c0c475f7-2856-46e1-87ab-dd67ec8dd43f/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .interior {
+      @include displayCenter(center, center);
+      font-size: 28px;
+      line-height: 36px;
+      color: #ffff;
+      padding-top: 30px;
+    }
+    .future_interior_img {
+      position: relative;
+      height: 800px;
+      width: 100vw;
+    }
+  }
+  .modelS_Three {
+    background-color: black;
+    @include displayCenter(center, center);
+  }
+  .modelS_Four {
+    height: 600px;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/08585f00-c0b7-4bda-80e4-2b78406b5582/bvlatuR/std/4096x2560/Model-S-Performance-Hero-Desktop-LHD.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .modelS_Four_bottom {
+      @include displayCenter(center, center);
+      gap: 180px;
+      color: #ffff;
+      padding-top: 500px;
+      .modelS_four_speed {
+        .modelS_four_range_number {
+          font-size: 28px;
+          line-height: 28px;
+        }
+        .modelS_four_range_text {
+          font-size: small;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .modelS_Six {
+    background-color: #f4f4f4;
+  }
+  .modelS_eight {
+    background-color: black;
+    @include displayCenter(center, center);
+  }
+}
+
+@include mQ($sm) {
+  .modelS_wrapper {
+    .modelS_Four {
+      .modelS_Four_bottom {
+        gap: 20px;
+        .modelS_four_speed {
+          .modelS_four_range_number {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

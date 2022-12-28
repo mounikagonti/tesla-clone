@@ -1,0 +1,117 @@
+.power_train_wrapper {
+  padding: 150px 0px;
+  .power_train_text_wrapper {
+    max-width: 1320px;
+    margin: auto;
+    margin-left: 200px !important;
+    .power_train_heading {
+      font-size: 28px;
+      font-weight: 500;
+    }
+    .power_train_text {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 20px;
+      width: 700px;
+    }
+  }
+  .power_train_img_container {
+    position: relative;
+    height: 100vh;
+    width: 90vw;
+    margin: auto;
+    border-radius: 5px !important;
+    margin-top: 30px;
+  }
+  .power_train_range_wrapper {
+    max-width: 1120px;
+    margin: auto;
+    @include displayCenter(center, center);
+    gap: 25px;
+    margin-top: 50px;
+    .power_train_range-left {
+      .line {
+        border: 3px solid black;
+      }
+      .power_train_model_text {
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      .power_train_model_normal_text {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+      .power_train_range_wrapper {
+        @include displayCenter(center, flex-start);
+        .power_train_speed {
+          .power_train_range_number {
+            font-size: 24px;
+            font-weight: 500;
+          }
+          .power_train_range_text {
+            font-size: small;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .power_train_range-right {
+      .line {
+        border: 3px solid black;
+      }
+      .power_train_model_text {
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+      .power_train_model_normal_text {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+      .power_train_range_wrapper {
+        @include displayCenter(center, flex-start);
+        .power_train_speed {
+          .power_train_range_number {
+            font-size: 24px;
+            font-weight: 500;
+          }
+          .power_train_range_text {
+            font-size: small;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .power_train_wrapper {
+    .power_train_text_wrapper {
+      margin-left: 0px !important;
+      padding: 0 20px;
+      .power_train_text {
+        width: 400px;
+      }
+    }
+    .power_train_img_container {
+      width: 100vw;
+      margin-top: -170px;
+    }
+    .power_train_range_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      //   margin-top: -150px;
+      .power_train_range-left {
+        margin-top: -230px;
+      }
+      .power_train_range-right {
+        margin-top: 30px;
+      }
+    }
+  }
+}

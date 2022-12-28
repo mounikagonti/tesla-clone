@@ -1,0 +1,118 @@
+.modelS_five_wrapper {
+  padding: 40px 0px;
+  max-width: 1320px;
+  margin: auto;
+  @include displayCenter(center, space-around);
+  .modelS_five_left {
+    .modelS_five_text {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .modelS_five_heading {
+      @include displayCenter(center, space-between);
+      .modelS_heading_left {
+        font-size: 28px;
+        font-weight: 500;
+        margin-left: 10px;
+      }
+      .modelS_heading_right {
+        margin-left: 250px;
+        width: 730px;
+      }
+    }
+    .modelS_five_btn_wrapper {
+      @include displayCenter(center, flex-start);
+      margin-top: 20px;
+      gap: 30px;
+      .buy_now_btn_one {
+        display: inline-block;
+        cursor: pointer;
+        border: 3px solid #ffff;
+        background: transparent;
+        padding: 8px 70px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        color: #ffff;
+        &:hover {
+          background-color: #ffff;
+          color: black;
+        }
+      }
+      .buy_now_btn {
+        display: inline-block;
+        cursor: pointer;
+        border: 3px solid black;
+        background: transparent;
+        padding: 8px 70px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        &:hover {
+          background-color: black;
+          color: #ffff;
+        }
+      }
+      .order_btn_one {
+        display: inline-block;
+        cursor: pointer;
+        background-color: #222222;
+        padding: 10px 50px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        &:hover {
+          background-color: #393c41;
+        }
+      }
+      .order_btn {
+        display: inline-block;
+        cursor: pointer;
+        background-color: #eeeeee;
+        padding: 10px 50px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .modelS_five_wrapper {
+    padding: 0 20px;
+    margin-top: 10px;
+    .modelS_five_left {
+      .modelS_five_heading {
+        display: flex;
+        flex-wrap: wrap;
+        .modelS_heading_left {
+          margin-left: 0px;
+          margin-top: 20px;
+        }
+        .modelS_heading_right {
+          margin-left: 0px;
+          margin-top: 20px;
+          width: 400px;
+        }
+      }
+      .modelS_five_btn_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .buy_now_btn {
+          width: 100%;
+        }
+        .order_btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.accessor_wrapper {
+  @include displayCenter(center, center);
+  flex-direction: column;
+  .accessor_text {
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: 600;
+  }
+  .accessorImg {
+    position: relative;
+    width: 450px;
+    height: 450px;
+  }
+  .shop_now_btn {
+    display: inline-block;
+    padding: 10px 80px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -70px;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@include mQ($sm) {
+  .accessor_wrapper {
+    .shop_now_btn {
+      width: 85%;
+    }
+  }
+}
