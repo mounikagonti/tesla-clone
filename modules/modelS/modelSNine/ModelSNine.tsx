@@ -1,36 +1,32 @@
 import React from "react";
 
-const ModelSNine = () => {
-//   const handleResize = () => {
-//     if (window.innerWidth > 600) {
-//       return (
-//         <video style={{ width: "400px" }}>
-//           <source
-//             src="https://www.tesla.com/sites/default/files/videos/Plaid-Range-Web-Desktop-8mb.mp4"
-//             type="video/mp4"
-//           />
-//         </video>
-//       );
-//     }
-//   };
-
+const ModelSNine = ({ vid }: any) => {
   return (
     <div className="modelS_nine_wrapper">
       <div className="modelS_nine_left">
-        <video
-          width="1170px"
-          height="100%"
-          autoPlay
-          loop
-          muted
-        //   onResize={handleResize}
-          className="video"
-        >
-          <source
-            src="https://www.tesla.com/sites/default/files/videos/Plaid-Range-Web-Desktop-8mb.mp4"
-            type="video/mp4"
-          />
+        <video autoPlay loop muted className="video">
+          <source src={vid} type="video/mp4" />
         </video>
+        <div className="overlay">
+          <div className="modelS_video_text">
+            <div className="modelS_video_text_speed">
+              <div className="modelS_video_range_number"> 405 mi</div>
+              <div className="modelS_video_range_text">Range (EPA est.)</div>
+            </div>
+            <div className="modelS_video_text_speed">
+              <div className="modelS_video_range_number">15 min</div>
+              <div className="modelS_video_range_text">
+                Recharge up to 200 mi
+              </div>
+            </div>
+            <div className="modelS_video_text_speed">
+              <div className="modelS_video_range_number">40,000 +</div>
+              <div className="modelS_video_range_text">
+                Global Superchargers
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="modelS_nine_right">
         <div className="modelS_nine_text">Range</div>

@@ -9,6 +9,7 @@
     position: relative;
     width: 120px;
     height: 60px;
+    color: #fff;
   }
   .header_middle {
     a {
@@ -54,6 +55,32 @@
     }
   }
 }
+.header_wrapperOne {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  .header_left {
+    position: relative;
+    width: 120px;
+    height: 60px;
+  }
+  .header_middle {
+    a {
+      color: #fff;
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+  .header_right {
+    a {
+      color: #fff;
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+}
 
 .header_none {
   position: relative !important;
@@ -88,6 +115,22 @@
   a {
     @include displayCenter(flex-start, center);
     flex-direction: column;
+  }
+}
+
+.header__menu {
+  a {
+    color: black !important ;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 400;
+    padding: 8px 15px;
+    cursor: pointer;
+    &:hover {
+      background-color: $third_brand;
+      border-radius: 10px;
+      color: rgb(255, 255, 255) !important ;
+    }
   }
 }
 

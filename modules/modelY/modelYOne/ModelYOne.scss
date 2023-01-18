@@ -1,0 +1,49 @@
+.modelY_one_wrapper {
+  @include displayCenter(center, center);
+  gap: 50px;
+  .modelY_imgOne_wrapper {
+    .modelY_imgOne {
+      position: relative;
+      width: 650px;
+      height: 650px;
+      border-radius: 15px;
+    }
+    .imgOne_text {
+      @include displayCenter(center, center);
+      margin-top: -50px;
+    }
+  }
+  .modelY_imgTwo_wrapper {
+    .modelY_imgTwo {
+      position: relative;
+      width: 650px;
+      height: 650px;
+      border-radius: 15px;
+    }
+    .imgTwo_text {
+      @include displayCenter(center, center);
+      margin-top: -50px;
+    }
+  }
+  margin-bottom: 50px;
+}
+
+@include mQ($sm) {
+  .modelY_one_wrapper {
+    flex-wrap: wrap;
+    gap: 0px;
+    .modelY_imgOne_wrapper {
+      .modelY_imgOne {
+        width: 450px;
+        height: 450px;
+      }
+    }
+    .modelY_imgTwo_wrapper {
+      margin-top: -50px;
+      .modelY_imgTwo {
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+}

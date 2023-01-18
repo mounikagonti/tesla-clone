@@ -1,0 +1,68 @@
+.solar_panel_wrapper {
+  .solarPanel_banner {
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .solarPanel_Three {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/173055ff-afe2-4114-947e-ba62cf8e05c6/bvlatuR/std/2880x1800/PW-Inverter-Hero-D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .solarPanel_Five {
+    // aspect-ratio: 16/9;
+    // flex-wrap: 1;
+    .video {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  .solarPanel_Six {
+    margin-top: -50px;
+  }
+  .solarPanel_Seven {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/f7e7ce60-a70b-4dd9-883c-7baf1c0eb636/bvlatuR/std/2880x1800/SP-tesla-app-D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .solarPanel_Nine {
+    background-color: black;
+  }
+  .solarPanel_Ten {
+    background-color: black;
+  }
+}
+
+@include mQ($sm) {
+  .solarPanel_Two {
+    margin-top: 250px;
+  }
+  .solarPanel_Three {
+    margin-top: 250px;
+  }
+  .solarPanel_Six {
+    margin-top: -150px;
+  }
+  .solarPanel_Five {
+    .video {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  .solarPanel_Seven {
+    margin-top: 50px;
+  }
+  .solarPanel_Eight {
+    margin-top: 50px;
+  }
+  .solarPanel_Nine {
+    margin-top: 50px;
+  }
+}

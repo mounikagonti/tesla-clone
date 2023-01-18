@@ -1,0 +1,99 @@
+.best_seller_one_wrapper {
+  @include displayCenter(center, center);
+  gap: 10px;
+  .best_seller_imgOne_wrapper {
+    height: 100vh;
+    width: 500px;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/Men_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .imgOne_text {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 500px;
+    }
+    .imgOne_btn {
+      padding: 10px 50px;
+      border-radius: 5px;
+      border: 3px solid black;
+      margin-top: 20px;
+      font-weight: 500;
+      &:hover {
+        background-color: black;
+        color: #ffff;
+      }
+    }
+  }
+  .best_seller_imgTwo_wrapper {
+    height: 100vh;
+    width: 500px;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/Women_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .imgOne_text {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 500px;
+    }
+    .imgOne_btn {
+      padding: 10px 50px;
+      border-radius: 5px;
+      border: 3px solid black;
+      margin-top: 20px;
+      font-weight: 500;
+      &:hover {
+        background-color: black;
+        color: #ffff;
+      }
+    }
+  }
+  .best_seller_imgThree_wrapper {
+    height: 100vh;
+    width: 500px;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/Kids_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .imgOne_text {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 500px;
+    }
+    .imgOne_btn {
+      padding: 10px 50px;
+      border-radius: 5px;
+      border: 3px solid black;
+      margin-top: 20px;
+      font-weight: 500;
+      &:hover {
+        background-color: black;
+        color: #ffff;
+      }
+    }
+  }
+}
+@include mQ($sm) {
+  .best_seller_one_wrapper {
+    flex-wrap: wrap;
+    .best_seller_imgOne_wrapper {
+      height: 100vh;
+      width: 450px;
+    }
+    .best_seller_imgTwo_wrapper {
+      height: 100vh;
+      width: 450px;
+    }
+    .best_seller_imgThree_wrapper {
+      height: 100vh;
+      width: 450px;
+    }
+  }
+}

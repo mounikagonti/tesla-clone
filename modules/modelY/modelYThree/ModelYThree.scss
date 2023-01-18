@@ -1,0 +1,51 @@
+.modelY_three_wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .modelY_three_img_container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  .modelY_three_text_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 50px;
+    .modelY_three_range_container {
+      margin-top: 60px;
+      &:nth-of-type(2) {
+        margin-top: 160px;
+      }
+      &:nth-of-type(3) {
+        margin-top: 130px;
+      }
+      .eleven_number_range {
+        font-size: 28px;
+        line-height: 28px;
+      }
+      .eleven_text_range {
+        font-size: small;
+        margin-top: 5px;
+        // @include displayCenter(center, center);
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .modelY_three_wrapper {
+    margin-top: 250px;
+    .modelY_three_text_container {
+      .modelY_three_range_container {
+        margin-top: 60px;
+        &:nth-of-type(2) {
+          margin-top: 70px;
+        }
+        &:nth-of-type(3) {
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}

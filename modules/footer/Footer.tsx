@@ -1,8 +1,16 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ bgColor, isHomePage }: any) => {
   return (
-    <div className="footer_wrapper">
+    <div
+      className={
+        isHomePage
+          ? "footer_wrapper footer_wrapper_three"
+          : bgColor
+          ? "footer_wrapper footer_wrapper_two"
+          : "footer_wrapper"
+      }
+    >
       <div className="footer_text">Tesla &copy; 2022</div>
       <div className="footer_text">Privacy & Legal</div>
       <div className="footer_text">Vehicle Recalls</div>

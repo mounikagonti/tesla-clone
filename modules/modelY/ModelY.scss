@@ -1,0 +1,33 @@
+.modelY_wrapper {
+  .modelY_banner {
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/91abd4c7-32a1-41cc-ade5-b64774dbea61/bvlatuR/std/2880x1800/Model-Y-Main-Hero-Desktop-Global?quality=auto-medium&format=auto");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .modelY_One {
+    background-color: #f7f7f7;
+  }
+  .modelY_Four {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/48b20b9d-9322-4cf9-b079-44797fc32600/bvlatuR/std/0x0/AWD_hero@2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .modelY_Seven {
+    margin-top: -130px;
+  }
+  .modelX_Eight {
+    background-color: black;
+  }
+}
+
+@include mQ($sm) {
+  .modelY_wrapper {
+    .modelY_Six {
+      margin-top: -150px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.modelS_ten_wrapper {
+  display: grid;
+  @include displayCenter(flex-start, center);
+  background-color: #f5f5f5;
+  height: 100vh;
+  //   width: 100vw;
+  //   height: 600px;
+  .modelS_ten_left {
+    padding: 40px 30px;
+    .modelS_ten_text {
+      font-size: 17px;
+      font-weight: 400px;
+    }
+    .modelS_ten_heading {
+      .modelS_ten_heading_left {
+        font-size: 28px;
+        font-weight: 500px;
+      }
+      .modelS_ten_heading_right {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 400px;
+      }
+    }
+    .modelS_ten_btn_wrapper {
+      margin-top: 200px;
+      .buy_now_btn {
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
+        border: 3px solid black;
+        background: transparent;
+        padding: 8px 70px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        &:hover {
+          background-color: black;
+          color: #ffff;
+        }
+      }
+      .order_btn {
+        margin-top: 20px;
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
+        background-color: #eeeeee;
+        padding: 10px 50px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        border-radius: 5px;
+        border: none;
+        color: black;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+  }
+  .modelS_ten_right {
+    // margin-top: 50px;
+    .high_impact_img_container {
+      position: relative;
+      width: 75vw;
+      height: 100vh;
+    }
+  }
+}
+
+@include mQ($sm) {
+  .modelS_ten_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-top: 100px;
+    .modelS_ten_right {
+      .high_impact_img_container {
+        width: 450px;
+        height: 400px;
+      }
+    }
+  }
+}

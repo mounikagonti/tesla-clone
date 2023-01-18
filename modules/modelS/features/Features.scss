@@ -30,8 +30,7 @@
     }
   }
   .feature_two {
-    @include displayCenter(center, center); // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
+    @include displayCenter(center, center); 
     gap: 150px;
     .feature_text {
       @include displayCenter(flex-start, center);

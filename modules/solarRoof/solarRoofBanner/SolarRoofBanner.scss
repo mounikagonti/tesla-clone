@@ -1,0 +1,81 @@
+.solarRoof_banner_wrapper {
+  .modelS_top {
+    @include displayCenter(center, center);
+    flex-direction: column;
+    padding-top: 100px;
+    color: #ffff;
+    .modelS_text {
+      font-size: 40px;
+      font-weight: 800px;
+    }
+  }
+  .modelS_banner_bottom {
+    margin-top: 400px;
+    @include displayCenter(center, center);
+    color: #ffff;
+    gap: 80px;
+    .modelS_speed_wrapper {
+      @include displayCenter(center, center);
+      gap: 80px;
+      .modelS_speed {
+        font-size: 28px;
+        line-height: 28px;
+        .modelS_range_number {
+          text-align: center;
+        }
+      }
+      .modelS_range_text {
+        font-size: small;
+        margin-top: 5px;
+      }
+    }
+    .modelS_btn {
+      display: inline-block;
+      padding: 5px 40px;
+      border: 3px solid #ffff;
+      &:hover {
+        background-color: #ffff;
+        color: black;
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .solarRoof_banner_wrapper {
+    .modelS_top {
+      .modelS_text {
+        font-size: 30px;
+        font-weight: 800px;
+      }
+    }
+    .modelS_banner_bottom {
+      margin-bottom: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .modelS_speed_wrapper {
+        gap: 20px;
+        .modelS_speed {
+          font-size: 20px;
+        }
+        .modelS_range_text {
+          font-size: small;
+          margin-top: 5px;
+        }
+      }
+      .modelS_btn {
+        padding: 5px 10px;
+        border: 3px solid #ffff;
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+        &:hover {
+          background-color: #ffff;
+          color: black;
+        }
+      }
+    }
+  }
+}

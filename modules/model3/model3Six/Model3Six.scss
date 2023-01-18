@@ -1,0 +1,120 @@
+.model3_six_wrapper {
+  @include displayCenter(center, center);
+  gap: 40px;
+  .model3_six_left {
+    position: relative;
+    .model3_six_img {
+      position: relative;
+      width: 1000px;
+      height: 900px;
+      //   background-color: red;
+    }
+    .model3_six_content {
+      position: absolute;
+      top: 0;
+      left: 20%;
+      padding-top: 700px;
+      @include displayCenter(center, center);
+      color: #ffff;
+      gap: 80px;
+      .model3_speed_wrapper {
+        @include displayCenter(center, center);
+        gap: 40px;
+        .model3_speed {
+          font-size: 28px;
+          line-height: 28px;
+        }
+        .model3_range_text {
+          font-size: small;
+          margin-top: 5px;
+          width: 250px;
+        }
+      }
+    }
+  }
+  .model3_six_right {
+    padding: 0 20px;
+    .model3_six_small_text {
+      font-size: 17px;
+    }
+    .model3_six_heading {
+      font-size: 28px;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    .model3_six_normal_text {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    .model3_six_right_img {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+    .model3_six_bottom_right {
+      @include displayCenter(center, center);
+      .plus_btn {
+        padding: 5px 12px;
+        border: 2px solid black;
+        border-radius: 50%;
+        font-size: 20px;
+        &:hover {
+          background-color: black;
+          color: #fff;
+        }
+      }
+      .learn_more_btn {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .order_now_btn {
+        margin-left: 10px;
+        display: inline-block;
+        padding: 5px 40px;
+        border: 3px solid black;
+        &:hover {
+          background-color: black;
+          color: #ffff;
+        }
+      }
+    }
+  }
+}
+
+@include mQ($sm) {
+  .model3_six_wrapper {
+    gap: 0px;
+    flex-wrap: wrap;
+    .model3_six_left {
+      .model3_six_img {
+        width: 450px;
+        height: 450px;
+      }
+      .model3_six_content {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        padding-top: 300px;
+        @include displayCenter(center, center);
+        color: #ffff;
+        // gap: 20px;
+        .model3_speed_wrapper {
+          @include displayCenter(center, center);
+          //   gap: 20px;
+          .model3_speed {
+            font-size: 20px;
+          }
+          .model3_range_text {
+            font-size: small;
+            margin-top: 5px;
+            width: 120px;
+          }
+        }
+      }
+    }
+    .model3_six_right {
+      margin-top: 50px;
+    }
+  }
+}

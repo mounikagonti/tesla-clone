@@ -6,6 +6,11 @@ import ModelSFive from "./modelSFive/ModelSFive";
 import PowerTrain from "./powerTrain/PowerTrain";
 import ModelSSeven from "./modelSSeven/ModelSSeven";
 import ModelSNine from "./modelSNine/ModelSNine";
+import ModelSTen from "./modelSTen/ModelSTen";
+import ModelSEleven from "./modelSEleven/ModelSEleven";
+import ModelSTwelve from "./modelSTwelve/ModelSTwelve";
+import ModelSFourteen from "./modelSFourteen/ModelSFourteen";
+import ModelSThirteenth from "./modelSThirteenth/ModelSThirteenth";
 
 const ModelS = () => {
   const sec = () => {
@@ -92,7 +97,32 @@ const ModelS = () => {
         />
       </div>
       <div className="modelS_nine">
-        <ModelSNine />
+        <ModelSNine vid="https://www.tesla.com/sites/default/files/videos/Plaid-Range-Web-Desktop-8mb.mp4" />
+      </div>
+      <div className="modelS_ten">
+        <ModelSTen
+          imgTwo="https://cdn.shopify.com/s/files/1/0196/5170/files/Tesla-Model-3_5fc0ba64-40f2-4f8d-be30-ecdfbbca4224.jpg?v=1640798908"
+          name="Safety"
+          heading="High Impact Protection"
+        />
+      </div>
+      <div className="modelS_Eleven">
+        <ModelSEleven />
+      </div>
+      <div className="modelS_Twelve">
+        <ModelSTwelve />
+      </div>
+      <div className="modelS_Thirteen">
+        <ModelSThirteenth
+          modelText="Model S"
+          imgThree="https://tesla-cdn.thron.com/delivery/public/image/tesla/649c549e-12b4-40c6-9294-7e996b8d3ccb/bvlatuR/std/4096x3071/Model-S-Specs-Hero-Desktop-LHD.svg"
+        />
+      </div>
+      <div className="modelS_Fourteen">
+        <ModelSFourteen
+          textModel="Model S"
+          img="https://tesla-cdn.thron.com/delivery/public/image/tesla/e00bf240-9973-494f-a217-786b736d8dde/bvlatuR/std/3840x2128/Model-S-Order-Hero-Desktop-Mobile-Global.svg"
+        />
       </div>
     </div>
   );

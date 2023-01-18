@@ -1,0 +1,37 @@
+.model3_seven_wrapper {
+  padding-top: 400px;
+  margin-top: 100px;
+  @include displayCenter(center, center);
+  color: #ffff;
+  gap: 80px;
+  .model3_speed_wrapper {
+    @include displayCenter(center, center);
+    gap: 80px;
+    .model3_speed {
+      font-size: 28px;
+    }
+    .model3_range_text {
+      font-size: small;
+      margin-top: 5px;
+      width: 250px;
+    }
+  }
+}
+
+@include mQ($sm) {
+  .model3_seven_wrapper {
+    margin-top: 350px;
+    .model3_speed_wrapper {
+      @include displayCenter(center, center);
+      gap: 20px;
+      .model3_speed {
+        font-size: 20px;
+      }
+      .model3_range_text {
+        font-size: small;
+        margin-top: 5px;
+        width: 120px;
+      }
+    }
+  }
+}

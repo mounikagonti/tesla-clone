@@ -1,0 +1,42 @@
+.model3_wrapper {
+  .model3_banner {
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8a74d206-66dc-4386-8c7a-88ff32174e7d/bvlatuR/std/4096x2560/Model-S-Main-Hero-Desktop-LHD");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .model3_One {
+    background-color: #f7f7f7;
+  }
+  .model3_Two {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/1a5ba4b1-efd8-40bc-8b6d-e81bf8223e37/bvlatuR/std/2560x1440/Model-3-Performance-Hero-Desktop-LHD");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .model3_Four {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/a7d91e4d-ba1e-41f1-b996-36fb4c925f57/bvlatuR/std/2560x1600/Model-3-AWD-Hero-Desktop-LHD");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .model3_Eight {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/9a77958a-146d-40de-8a5f-0ba8af777fdf/bvlatuR/std/2560x1440/Model-3-Interior-Hero-Desktop-LHD");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .model3_ten {
+    background-color: black;
+  }
+}
+
+@include mQ($sm) {
+  .model3_Seven {
+    margin-top: -150px;
+  }
+}

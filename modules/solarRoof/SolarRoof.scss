@@ -1,0 +1,55 @@
+.solar_roof_wrapper {
+  .solar_roof_banner {
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/cfcf3747-c7d7-488d-896d-7c9462e50ca5/bvlatuR/std/2880x1800/Solar-Roof-Hero-Desktop-Global?quality=auto-medium&format=auto");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .solar_roof_One {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/60a584f9-7ae3-4cd5-9fa8-6251715df25b/bvlatuR/std/2880x1800/Solar-Roof-Design-Desktop-Global?quality=auto-medium&format=auto");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .solar_roof_Four {
+    // height: 100vh;
+    // width: 70vw;
+    // background-color: red;
+    // @include displayCenter(flex-start, center);
+    // aspect-ratio: 1/1;
+    // flex-grow: 1;
+  }
+  .solar_roof_Seven {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/7218535a-a8b7-4630-b4d5-17edcf5daa1d/bvlatuR/std/2880x1800/SR-tesla-app-D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // margin-top: 50px;
+  }
+  .solar_roof_Nine {
+    background-color: black;
+  }
+  .solar_roof_Ten {
+    background-color: black;
+  }
+}
+
+@include mQ($sm) {
+  .solar_roof_wrapper {
+    .solar_roof_Four {
+      margin-top: 300px;
+    }
+    .solar_roof_Five {
+      margin-top: 250px;
+    }
+    .solar_roof_Seven {
+      margin-top: 300px;
+    }
+    .solar_roof_Nine {
+      margin-top: 50px;
+    }
+  }
+}

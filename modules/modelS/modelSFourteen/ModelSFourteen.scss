@@ -1,0 +1,91 @@
+.modelS_fourteen_Wrapper {
+  @include displayCenter(center, center);
+  flex-direction: column;
+  //   height: 100vh;
+  .modelS_fourteen_container {
+    @include displayCenter(center, center);
+    gap: 200px;
+    .modelS_fourteen_left {
+      .modelS_fourteen_left_heading {
+        font-size: 28px;
+        font-weight: 500;
+      }
+      .modelS_fourteen_left_btn_wrapper {
+        @include displayCenter(center, center);
+        gap: 50px;
+        margin-top: 50px;
+        .modelS_fourteen_left_btnOne {
+          padding: 10px 60px;
+          border: 3px solid black;
+          font-size: 14px;
+          font-weight: 500;
+          border-radius: 5px;
+          &:hover {
+            background-color: black;
+            color: #ffff;
+          }
+        }
+        .modelS_fourteen_left_btnTwo {
+          padding: 10px 60px;
+          background-color: #eeeeee;
+          font-size: 14px;
+          font-weight: 500;
+          border-radius: 5px;
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          }
+        }
+      }
+    }
+    .modelS_fourteen_right {
+      position: relative;
+      width: 600px;
+      height: 600px;
+    }
+  }
+  .modelS_fourteen_normal_text {
+    width: 700px;
+    font-size: small;
+    a {
+      color: black;
+    }
+  }
+  // .modelS_fourteen_footer {
+  //   background-color: #ffff;
+  //   margin-bottom: 50px;
+  // }
+}
+
+@include mQ($sm) {
+  .modelS_fourteen_Wrapper {
+    .modelS_fourteen_container {
+      flex-wrap: wrap;
+      .modelS_fourteen_left {
+        // padding: 0 20px;
+        .modelS_fourteen_left_heading {
+          margin-left: 150px;
+        }
+        .modelS_fourteen_left_btn_wrapper {
+          flex-wrap: wrap;
+          .modelS_fourteen_left_btnOne {
+            width: 80%;
+            text-align: center;
+          }
+          .modelS_fourteen_left_btnTwo {
+            width: 80%;
+            text-align: center;
+          }
+        }
+      }
+      .modelS_fourteen_right {
+        margin-top: -200px;
+        width: 450px;
+        height: 450px;
+      }
+    }
+    .modelS_fourteen_normal_text {
+      width: 400px;
+      margin-top: -100px;
+    }
+  }
+}

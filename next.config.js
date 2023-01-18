@@ -11,6 +11,13 @@ const nextConfig = {
       "tesla-cdn.thron.com",
       "teslatap.com",
       "encrypted-tbn0.gstatic.com",
+      "cdn.shopify.com",
+      "localhost",
+      "www.tesla.com",
+      "e4z2u3d5.rocketcdn.me",
+      "www.designboom.com",
+      "static.vecteezy.com",
+      "cdn.freebiesupply.com",
     ],
   },
 };

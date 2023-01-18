@@ -1,0 +1,163 @@
+.shop_now_wrapper {
+  .shop_now_banner {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/Wall_Connector_banner_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .shop_now_modelS {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/MS_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .modelS_text {
+      font-size: 34px;
+      font-weight: 500;
+      color: #fff;
+      padding-top: 350px;
+    }
+    .shop_now_btn {
+      padding: 10px 80px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: black;
+      margin-top: 50px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  .shop_now_model3 {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/M3_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .modelS_text {
+      font-size: 34px;
+      font-weight: 500;
+      padding-top: 350px;
+    }
+    .shop_now_btn {
+      padding: 10px 80px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: black;
+      margin-top: 50px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  .shop_now_modelX {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/MX_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .modelS_text {
+      font-size: 34px;
+      font-weight: 500;
+      padding-top: 350px;
+      color: #fff;
+    }
+    .shop_now_btn {
+      padding: 10px 80px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: black;
+      margin-top: 50px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  .shop_now_modelY {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/MY_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .modelS_text {
+      font-size: 34px;
+      font-weight: 500;
+      padding-top: 350px;
+    }
+    .shop_now_btn {
+      padding: 10px 80px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: black;
+      margin-top: 50px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  .shop_now_charging {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/teslaweb/homepage/Charging_web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .modelS_text {
+      font-size: 34px;
+      font-weight: 500;
+      padding-top: 350px;
+      color: #fff;
+    }
+    .shop_now_btn {
+      padding: 10px 80px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: black;
+      margin-top: 50px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  .shop_now_lifeStyle {
+    height: 100vh;
+    background-image: url("https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/tesla-shop-marketing-imagery/image-grid/desktop_Mini_2k.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include displayCenter(center, center);
+    flex-direction: column;
+    .modelS_text {
+      font-size: 34px;
+      font-weight: 500;
+      padding-top: 350px;
+      color: #fff;
+    }
+    .shop_now_btn {
+      padding: 10px 80px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: black;
+      margin-top: 50px;
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+}

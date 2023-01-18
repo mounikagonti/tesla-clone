@@ -1,6 +1,5 @@
 import Image from "next/legacy/image";
 import React from "react";
-import Footer from "../footer/Footer";
 
 const Accessor = () => {
   return (
@@ -14,7 +13,6 @@ const Accessor = () => {
         />
       </div>
       <div className="shop_now_btn">Shop Now</div>
-      <Footer />
     </div>
   );
 };

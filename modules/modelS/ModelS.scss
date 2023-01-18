@@ -72,6 +72,20 @@
     background-color: black;
     @include displayCenter(center, center);
   }
+  .modelS_nine {
+    // background-color: red;
+    height: 100vh;
+  }
+  .modelS_Ten {
+    background-color: #f5f5f5;
+  }
+  .modelS_Thirteen {
+    background-color: black;
+    // overflow: hidden;
+  }
+  .modelS_Fourteen {
+    background-color: #ffff;
+  }
 }
 
 @include mQ($sm) {

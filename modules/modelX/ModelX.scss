@@ -1,0 +1,55 @@
+.modelX_wrapper {
+  .modelX_banner {
+    height: 100vh;
+    background-image: url("https://cdn.motor1.com/images/mgl/X481v/s1/2021-tesla-model-x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: inset 54px -200px 45px -67px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 54px -200px 45px -67px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 54px -200px 45px -67px rgba(0, 0, 0, 0.75);
+  }
+  .modelX_One {
+    -webkit-box-shadow: inset -18px 200px 49px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -18px 200px 49px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -18px 200px 49px -25px rgba(0, 0, 0, 0.75);
+    background-color: black;
+    height: 100vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/c0c475f7-2856-46e1-87ab-dd67ec8dd43f/bvlatuR/std/2880x1800/MS-Interior-Hero-Desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .interior {
+      @include displayCenter(center, center);
+      font-size: 28px;
+      line-height: 36px;
+      color: #ffff;
+      padding-top: 30px;
+    }
+  }
+  .modelX_Two {
+    background-color: black;
+    @include displayCenter(center, center);
+  }
+  .modelX_Three {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/10accb74-6710-4826-ba35-926846c140b5/bvlatuR/std/4096x2560/Model-X-Performance-Hero-Desktop-LHD.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .modelX_Six {
+    height: 70vh;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/c440ec7a-6fe7-4170-a958-117292218555/bvlatuR/std/2880x1800/Model-X-Exterior-Hero-Desktop-Global?quality=auto-medium&amp;format=auto.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .modelX_Eight {
+    background-color: black;
+    @include displayCenter(center, center);
+  }
+  .modelX_Nine {
+    background-color: black;
+  }
+}

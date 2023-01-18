@@ -1,0 +1,47 @@
+.solarRoof_footer {
+  height: 100vh;
+  @include displayCenter(center, center);
+  flex-direction: column;
+  color: #ffff;
+  .header_text {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .normal_text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .order_now_btn {
+    padding: 5px 60px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #fff;
+      color: black;
+    }
+  }
+  .energy_button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #393c41;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+  }
+  .update {
+    margin-top: 20px;
+    color: #fff;
+  }
+  // .solarRoof_footer_bottom {
+  //   margin-top: 200px;
+  //   background-color: transparent !important;
+  // }
+}
